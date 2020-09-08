@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtsplash_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/splash_title_margin_start"
+        android:layout_marginTop="@dimen/splash_title_margin_top"
+        android:text="@string/splash_title"
+        android:textColor="@color/splash_title_color"
+        android:textSize="@dimen/splash_title_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_splash"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="@dimen/splash_title_margin_start"
+        android:layout_marginTop="@dimen/splash_image_margin_top"
+        android:scaleType="fitXY"
+        android:src="@mipmap/splashimage"
+        app:layout_constraintStart_toStartOf="@+id/txtsplash_title"
+        app:layout_constraintTop_toBottomOf="@+id/txtsplash_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/splash_title_margin_start"
+        android:layout_marginTop="@dimen/splash_title_margin_top"
+        android:fontFamily="@font/roboto_italic"
+        android:text="@string/splash_desc"
+        android:textColor="@color/splash_text_color"
+        android:textSize="@dimen/splash_text_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtsplash_title"
+        app:layout_constraintTop_toBottomOf="@+id/img_splash" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/button_getstarted"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/splash_title_margin_top"
+        android:background="@color/splash_button_color"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:padding="@dimen/button_padding"
+        android:text="@string/get_started"
+        android:textColor="@color/button_text_color"
+        android:textSize="@dimen/splash_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_desc" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_already_have_account"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/signup_subtitle_margin"
+        android:background="@color/splash_button_color"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:padding="@dimen/button_padding"
+        android:text="@string/already_have_account"
+        android:textColor="@color/button_text_color"
+        android:textSize="@dimen/splash_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_getstarted" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">NearBuy</string>
+    <string name="splash_title">nearBuy</string>
+    <string name="splash_desc">Enjoy the \n\nFree Delivery \nSooner Delivery \nHasel free returns
+        \nEasy payment Options \nDirect contact with the merchant</string>
+    <string name="get_started">Get Started</string>
+    <string name="already_have_account">Already have account</string>
+
+    <!--Signup strings-->
+    <string name="signup_title">Sign Up</string>
+    <string name="signup_subtitle1">(Page 1)</string>
+    <string name="signup_subtitle2">(Page 2)</string>
+    <string name="name">Name</string>
+    <string name="mobile">Phone number</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="confirmotp">Confirm \n OTP</string>
+    <string name="next">Next</string>
+    <string name="address">Address</string>
+    <string name="doorno">Door Number</string>
+    <string name="apartment_details">Apartment/Home Details</string>
+    <string name="street">Street</string>
+    <string name="area">Area/Locality</string>
+    <string name="city">City</string>
+    <string name="pincodenumber">Pin</string>
+    <string name="termsand_conditions">I accept the nearBuy Terms &amp; Conditons</string>
+
+    <!--signin strings-->
+    <string name="signin">Signin (Using OTP)</string>
+    <string name="signin_button_text">Login</string>
 </resources>

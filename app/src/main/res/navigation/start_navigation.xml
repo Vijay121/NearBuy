@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/start_navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        tools:layout="@layout/splash_fragment_layout"
+        android:name="com.shaik.nearbuy.fragments.SplashFragment"
+        android:label="SplashFragment" >
+
+        <action
+            android:id="@+id/action_splashFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/signup_fragment_layout"
+        android:id="@+id/signupFragment"
+        android:name="com.shaik.nearbuy.fragments.SignupFirstscreenFragment"
+        android:label="SignupFragment" >
+        <action
+            android:id="@+id/action_signupFragment_to_signupSecondscreenFragment"
+            app:destination="@id/signupSecondscreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        tools:layout="@layout/signin_fragment_layout"
+        android:name="com.shaik.nearbuy.fragments.SignInFragment"
+        android:label="SignInFragment" />
+    <fragment
+        android:id="@+id/signupSecondscreenFragment"
+        android:name="com.shaik.nearbuy.fragments.SignupSecondscreenFragment"
+        android:label="SignupSecondscreenFragment" />
+</navigation>
